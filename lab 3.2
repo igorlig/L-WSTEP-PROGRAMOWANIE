@@ -1,0 +1,129 @@
+# Zad 1
+Moja_lista = [1, 17, 3, 5, 3, 4, 86, 90, 2, 21]
+
+print(Moja_lista[0])
+print(Moja_lista[-1])
+print(len(Moja_lista))
+print(max(Moja_lista))
+print(min(Moja_lista))
+print(sum(Moja_lista))
+print(sorted(Moja_lista))
+
+Moja_lista.append(6)
+print(Moja_lista)
+
+Moja_lista.insert(2, 5)
+print(Moja_lista)
+
+print(Moja_lista.pop())
+print(Moja_lista)
+
+Moja_lista.reverse()
+print(Moja_lista)
+
+Moja_lista.sort()
+print(Moja_lista)
+
+lista2 = [10, 20]
+print(Moja_lista + lista2)
+print(lista2 * 5)
+print(Moja_lista[:3])
+print(Moja_lista[4:])
+print(Moja_lista[1:6:2])
+print(Moja_lista[::-1])
+
+
+# Zad 2
+imiona = ["Kasia", "Adam", "Zosia", "Bartek"]
+
+imiona.sort()
+print(imiona)
+
+imiona.append("Marek")
+imiona.append("Ewa")
+ostatni = imiona.pop()
+print(ostatni)
+print(imiona)
+
+imiona.insert(2, "Ola")
+print(imiona)
+
+imiona.reverse()
+imiona = imiona * 2
+print(imiona)
+
+
+# Zad 3
+imie = input("Podaj imię: ")
+print("Witaj", imie)
+
+wiek = input("Podaj wiek: ")
+print("Twój wiek to:", wiek)
+
+imie = input("Podaj imię: ")
+nazwisko = input("Podaj nazwisko: ")
+print(imie[0].upper() + nazwisko[0].upper())
+
+tekst = input("Podaj tekst: ")
+print(tekst * 5)
+
+t1 = input("Podaj pierwszy tekst: ")
+t2 = input("Podaj drugi tekst: ")
+t3 = t1 + t2
+print(t3)
+
+t1 = input("Podaj pierwszy tekst: ")
+t2 = input("Podaj drugi tekst: ")
+t3 = t1[:len(t1)//2] + t2[len(t2)//2:]
+print(t3)
+
+
+# Zad 5
+dni_tygodnia = ("Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela")
+print(dni_tygodnia)
+
+
+# Zad 6
+owoce = ('jabłko', 'banan', 'gruszka', 'banan', 'banan', 'malina')
+print(owoce.count('banan'))
+
+
+# Zad 7
+moja_krotka = (10, 2, 6, 6, 9, 13, 0, 1)
+lista = list(moja_krotka)
+lista.sort()
+moja_krotka = tuple(lista)
+print(moja_krotka)
+
+
+# Zad 8
+stopnie = (
+    "Szeregowy",
+    "Kapral",
+    "Sierżancie",
+    "Porucznik",
+    "Kapitan",
+    "Major",
+    "Pułkownik",
+)
+
+ilość_stopnii = len(stopnie)
+Major_index = stopnie.index("Major")
+Pułkownik_wstepowanie = "Pułkownik" in stopnie
+
+print(ilość_stopnii)
+print(Major_index)
+print(Pułkownik_wstepowanie)
+
+
+# Zad 9
+zakupy = {
+    "Chleb": 4.50,
+    "Mleko": 3.80,
+    "Jajka": 11.20,
+    "Masło": 7.99,
+    "Kawa": 24.50
+}
+
+print(zakupy)
+print("Suma wydatków:", sum(zakupy.values()))
